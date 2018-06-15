@@ -169,6 +169,7 @@ body {
 
 .main-portoflio-skills__item:last-child {
   margin-right: 0;
+  margin-bottom: 125px;
 
 }
 
@@ -177,11 +178,32 @@ body {
 }
 
 .main-portoflio-skills__title {
-	text-align: center;
-	text-decoration: underline;
-	
+  position: relative;
+	text-align: center;	
+  /* I'm not sure about this margin, probably better to write this in the  class="main-portfolio-skills"*/
+  padding-bottom: 25px;  
+}
+
+.main-portoflio-skills__title:after {
+  content: "";
+
+  position: absolute;
+  right: 150px;
+  bottom: 0;
+  left: 150px;
+
+  height: 3px;
+
+  background-color: #3dc9b3;
 }
 
 .main-portoflio-skills__text {
 	text-align: center;
+  color: #c9cdcf;
+}
+
+.main-portfolio__small-slider {
+  background-image: url("../img/iphone.jpg");
+  background-repeat: no-repeat;
+  
 }
