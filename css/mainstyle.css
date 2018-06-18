@@ -188,9 +188,9 @@ body {
   content: "";
 
   position: absolute;
-  right: 150px;
+  right: 165px;
   bottom: 0;
-  left: 150px;
+  left: 145px;
 
   height: 3px;
 
@@ -198,12 +198,52 @@ body {
 }
 
 .main-portoflio-skills__text {
-	text-align: center;
+  text-align: center;
   color: #c9cdcf;
 }
 
-.main-portfolio__small-slider {
+.container-wrapper {
   background-image: url("../img/iphone.jpg");
   background-repeat: no-repeat;
+  position: relative;
+
+  /*later I del this height*/
+  height: 700px;
+}
+
+.main-portfolio-info__img-wrapper--slider {
+  padding-left: 100px;
+}
+
+.slider-block__wrapper {
+  content: "";
   
+  position: absolute;
+  left: 50%;
+  background-color: white;
+  width: 800px;
+}
+
+.main-portfolio-info__slider-list {
+  list-style: none;
+  font-size: 15px;
+  padding-left: 0;
+}
+
+.main-portfolio-info__slider-title {
+  padding-left: 125px;
+  margin-top: 135px;
+
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.main-portfolio-info__slider-text {
+  color: #8c9398;
+    
+  line-height: 20px;
+  width: 455px;
+  padding-left: 100px;
+  text-align: left;
+   
 }
