@@ -11,6 +11,11 @@ body {
   min-width: 1200px;
 }
 
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -179,7 +184,7 @@ body {
 
 .main-portoflio-skills__title {
   position: relative;
-	text-align: center;	
+  text-align: center;	
   /* I'm not sure about this margin, probably better to write this in the  class="main-portfolio-skills"*/
   padding-bottom: 25px;  
 }
@@ -222,6 +227,7 @@ body {
   left: 50%;
   background-color: white;
   width: 800px;
+  height: 700px;
 }
 
 .main-portfolio-info__slider-list {
@@ -229,6 +235,90 @@ body {
   font-size: 15px;
   padding-left: 0;
 }
+
+.main-portfolio-info__slider-item {
+  display: none;
+}
+
+
+.slider-controls {
+  position: absolute;
+  bottom: 135px;
+  z-index: 0;
+
+  width: 160px;
+  height: 18px;
+  font-size: 0px; 
+  transform: translateX(260px);
+}
+
+.main-portfolio__small-slider--slider-controls-item {
+  position: relative;
+
+  display: inline-block;
+  vertical-align: center;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+
+  border-radius: 50%;
+  cursor: pointer; 
+  border-color: black;
+}
+
+.main-portfolio__small-slider--slider-controls-item::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+
+  width: 18px;
+  height: 18px;
+
+  background: white;
+
+  border-radius: 50%;
+  border: 2px solid; 
+  border-color: #c9cbca;
+}
+
+.main-portfolio-info__slider-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.slider-page-1:checked ~ .main-portfolio-info__slider-list .main-portfolio-info__slider-item:nth-child(1) {
+  display: block;
+}
+
+.slider-page-2:checked ~ .main-portfolio-info__slider-list .main-portfolio-info__slider-item:nth-child(2) {
+  display: block;
+}
+
+.slider-page-3:checked ~ .main-portfolio-info__slider-list .main-portfolio-info__slider-item:nth-child(3) {
+  display: block;
+}
+
+.slider-page-1:checked ~ .slider-controls .slider-controls-item-1::before,
+.slider-page-2:checked ~ .slider-controls .slider-controls-item-2::before,
+.slider-page-3:checked ~ .slider-controls .slider-controls-item-3::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: 12px;
+  height: 12px;
+  margin: -6px;
+  border: 2px solid black;
+  background-color: black;
+  border-radius: 50%;
+}
+
 
 .main-portfolio-info__slider-title {
   padding-left: 125px;
@@ -248,11 +338,15 @@ body {
    
 }
 
-.slider-controls {
-  position: absolute;
-  left: 50%;
-  bottom: 104px;
-  z-index: 0;
 
-  width: 160px;
-  height: 18px;
+.main-remark-about-design {
+  background-image: url(../img/littlebg.jpg);
+  background-repeat: no-repeat;
+}
+
+.main-remark-about-design__title {
+  text-align: center;
+  
+  color: white;
+  font-size: 40px;
+}
