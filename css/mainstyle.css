@@ -349,4 +349,14 @@ h1 {
   
   color: white;
   font-size: 40px;
+
+  text-transform: uppercase;
+}
+
+.main-remark-about-design__text {
+  color: white;
+
+  text-align: center;
+  text-transform: uppercase;
+  
 }
