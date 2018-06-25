@@ -52,7 +52,7 @@ h2 {
   font-size: 40px;
   line-height: 45px;
   font-weight: 500;
-  letter-spacing: 15px;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
   text-align: center;
 
@@ -69,9 +69,14 @@ h2 {
   font-size: 15px;
   line-height: 18px;
   font-weight: 400;
-  letter-spacing: 3px;
+  letter-spacing: 0.15em;
 
   text-align: center;
+}
+
+.nav-wrapper__text--span {
+  font-weight: bold;
+  font-style: italic;
 }
 
 .nav-wrapper__btn {
@@ -89,7 +94,7 @@ h2 {
   font-size: 15px;
   line-height: 18px;
   font-weight: 500;
-  letter-spacing: 5px;
+  letter-spacing: 0.15em;
 
   background-color: #3dc9b3;
   border-radius: 3%;
@@ -114,7 +119,7 @@ h2 {
   font-size: 20px;
   font-weight: 500;
   line-height: 22px;
-  letter-spacing: 4px;
+  letter-spacing: 0.15em;
 
   text-transform: uppercase;
   text-align: center;
@@ -123,12 +128,12 @@ h2 {
 }
 
 .main-portfolio-info__img-wrapper {
-  text-align: center;
+  margin-left: 32%;
   margin-bottom: 85px;
 }
 
 .main-portfolio-info__text-wrapper {
-   width: 700px;
+   width: 745px;
    margin-left: auto;
    margin-right: auto;
    padding-bottom: 130px;
@@ -138,8 +143,13 @@ h2 {
   color: #a1a9b0;
 
   font-weight: 600;
+  letter-spacing: 0.01em;
 
   text-align: center;
+  line-height: 30px;
+
+  margin: 0;
+  padding: 0;
 }
 
 .main-portfolio-info__text--dark {
@@ -152,7 +162,7 @@ h2 {
   font-size: 15px;
   font-weight: 600;
   line-height: 18px;
-  letter-spacing: 2px;
+  letter-spacing: 0.15em;
 
   text-align: center;
   text-transform: uppercase;
@@ -192,6 +202,10 @@ h2 {
   text-align: center;	
   /* I'm not sure about this margin, probably better to write this in the  class="main-portfolio-skills"*/
   padding-bottom: 25px;  
+
+  font-size: 15px;
+  font-weight: 550;
+  text-transform: uppercase;
 }
 
 .main-portoflio-skills__title:after {
@@ -330,7 +344,7 @@ h2 {
   margin-top: 135px;
 
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 0.15em;
 }
 
 .main-portfolio-info__slider-text {
@@ -473,4 +487,41 @@ h2 {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 0.1em;
+}
+
+.main-portfolio-design__footer--btn:hover {
+  background-color: #6a758c;
+}
+
+.main-portfolio-design__footer--btn:active {
+  color: #3669d0;
+  background-color: #242830;
+  /*I'll change it later*/
+}
+
+.main-team__title {
+  margin-top: 90px;
+  margin-bottom: 25px;
+
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.15em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-team__title--img-wrapper {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.main-team__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.main-team__item--img-wrapper {
+  text-align: center;
 }
