@@ -16,6 +16,11 @@ h1 {
 	padding: 0;
 }
 
+h2 {
+	margin: 0;
+	padding: 0;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -346,9 +351,11 @@ h1 {
 
 .main-remark-about-design__title {
   text-align: center;
+  padding-top: 80px;
   
   color: white;
   font-size: 40px;
+<<<<<<< HEAD
 
   text-transform: uppercase;
 }
@@ -360,3 +367,36 @@ h1 {
   text-transform: uppercase;
   
 }
+=======
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.main-remark-about-design__title--small {
+  text-align: center;
+  
+  margin: 0;
+  padding-top: 25px;
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+
+}
+
+.main-remark-about-design__span {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.main-remark-about-design__img-wrapper {
+  display: inline-block;
+  padding-top: 40px;
+  margin-bottom: 39px;
+  text-align: center;
+  margin-left: 49.5%;
+}
+>>>>>>> origin/master
