@@ -32,7 +32,7 @@ h2 {
 .container {
   width: 1560px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0;
 }
 
 .container-header {
@@ -373,16 +373,6 @@ h2 {
   text-transform: uppercase;
 }
 
-/*.main-remark-about-design__text {
-  color: white;
-
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-*/
 .main-remark-about-design__title--small {
   text-align: center;
   
@@ -511,17 +501,117 @@ h2 {
   text-align: center;
 }
 
+.main-team__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+
+  margin: 0;
+  margin-bottom: 70px;
+  padding: 0;
+  padding-left: 10px;
+}
+
+.main-team__item {
+  width: 362px;
+}
+
+.main-team__item:first-child {
+  margin-left: 230px;
+}
+
 .main-team__title--img-wrapper {
   text-align: center;
   margin-bottom: 60px;
 }
 
-.main-team__list {
-  list-style: none;
-  display: flex;
-  flex-wrap: nowrap;
-}
-
 .main-team__item--img-wrapper {
   text-align: center;
+}
+
+.main-team__text--big {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: 0.15em;
+
+  position: relative;
+
+  margin-bottom: 55px;
+}
+
+
+.main-team__text--big:after {
+  content: "";
+
+  position: absolute;
+  right: 165px;
+  bottom: -20px;
+  left: 165px;
+
+  height: 3px;
+
+  background-color: #3dc9b3; 
+}
+
+.main-team__text--small {
+  text-align: center;
+  color: #8c9398;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.social-link {
+  /*text-decoration: none;*/
+  font-size: 0;
+  line-height: 15px;
+  margin-right: 10px;
+  align-items: center;
+
+  background-color: #242830;
+  border-radius: 50%;
+
+  padding: 15px;
+  padding-top: 28px;
+  /*It's wrong, later I'll fix it*/
+}
+
+.social-link:first-of-type {
+  margin-left: 105px;
+}
+
+.social-link:last-of-type {
+  margin-right: 0;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: #3dc9b3;
+  border-color: #3dc9b3;
+}
+
+.social-link:active {
+  box-shadow: inset 1px 1px 10px -1px #1f655a;
+}
+
+.main-subscribe__wrapper {
+  background-image: url(../img/subscribe-bg.jpg);
+  background-repeat: no-repeat;
+}
+
+.main-subscribe--img-wrapper {
+  padding-top: 120px;
+}
+
+.main-subscribe__title {
+ text-align: center;
+ padding-top: 25px;
+
+ text-transform: uppercase;
+ font-size: 15px;
+ font-weight: 400;
+ letter-spacing: 0.15em;
+ color: white;
 }
