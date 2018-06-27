@@ -527,6 +527,8 @@ h2 {
 
 .main-team__item--img-wrapper {
   text-align: center;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .main-team__text--big {
@@ -602,16 +604,47 @@ h2 {
 }
 
 .main-subscribe--img-wrapper {
-  padding-top: 120px;
+  padding-top: 125px;
+  padding-left: 787px;
+
+  margin: 0;
+  margin-bottom: 14px;
 }
 
 .main-subscribe__title {
- text-align: center;
- padding-top: 25px;
+ margin-bottom: 35px;
+
 
  text-transform: uppercase;
  font-size: 15px;
  font-weight: 400;
  letter-spacing: 0.15em;
  color: white;
+ padding-left: 635px;
+}
+
+.main-subscribe__form--input {
+  background-color: transparent;
+  border: 1px solid white;
+
+  margin-left: 37%;
+
+  width: 330px;
+  height: 60px;
+
+  margin-bottom: 165px;
+}
+
+.main-subscribe__form--btn {
+  height: 65px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: 5px;
+  background-color: #3dc9b3;
+  border: none;
+
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 0.15em;
+  color: white;
 }
