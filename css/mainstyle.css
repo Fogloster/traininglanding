@@ -104,8 +104,14 @@ h2 {
   margin-bottom: 345px;
 }
 
-.nav-wrapper__btn:hover {
+.nav-wrapper__btn:hover,
+.nav-wrapper__btn:focus {
   background-color: #33a593;
+}
+
+.nav-wrapper__btn:active {
+  background-color: #246e64;
+  box-shadow: 0 3px 1px 0 #25c2ac;
 }
 
 .main-portfolio-info {
@@ -212,9 +218,9 @@ h2 {
   content: "";
 
   position: absolute;
-  right: 165px;
+  right: 160px;
   bottom: 0;
-  left: 145px;
+  left: 155px;
 
   height: 3px;
 
@@ -652,6 +658,16 @@ h2 {
   color: white;
 }
 
+.main-subscribe__form--btn:hover,
+.main-subscribe__form--btn:focus {
+  background-color: #33a593;
+}
+
+.main-subscribe__form--btn:active {
+  background-color: #246e64;
+}
+
+
 .main-subscribe__img-wrapper {
   position: absolute;
   margin-left: 49%;
@@ -728,6 +744,11 @@ h2 {
   font-weight: 500;
   margin: 0;
   margin-bottom: 30px;
+}
+
+.footer-text--black {
+  font-weight: bold;
+  color: black;
 }
 
 .footer__social-wrapper {
