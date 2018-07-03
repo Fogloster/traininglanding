@@ -642,6 +642,12 @@ h2 {
   height: 60px;
 
   margin-bottom: 165px;
+  padding-left: 30px;
+
+  color: white;
+  letter-spacing: 0.15em;
+  font-style: italic;
+  font-size: 16px;
 }
 
 .main-subscribe__form--btn {
